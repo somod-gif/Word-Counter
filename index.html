@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+
+<body>
+    <h1>Word  & Characters Counter</h1>
+    <div class="boxs">
+        <div class="box">
+            <p>Characters</p>
+            <input type="number" disabled value="0" id="char">
+        </div>
+        <div class="box">
+            <p>Words</p>
+            <input type="number" disabled value="0" id="word">
+        </div>
+        <br>
+        <textarea id="textArea" cols="30" rows="10"></textarea>
+    </div>
+    <script>
+        let textArea = document.getElementById("textArea");
+        let character = document.getElementById("char");
+        let wordCount = document.getElementById("word");
+
+        textArea.addEventListener("input", function () {
+            let text = this.value;
+            text = text.trim();
+            let char = text.length;
+            character.value = char;
+            let newText = text.split(/\s+/);
+            let clearWords = newText.filter((element) => {
+                return element !== "";
+            });
+            wordCount.value = clearWords.length;
+        });
+    </script>
+</body>
+
+</html>
