@@ -1,0 +1,21 @@
+main{
+    width: 100%;
+    margin: auto;
+}
+.boxs{
+    width: 800px;
+    border: 1px solid solid black;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.box{
+    margin-left: 40px;
+}
+#textArea{
+    margin-left: 40px;
+}
+@media screen and (max-width:900px) {
+    .boxs{
+        display: block;
+    }
+}

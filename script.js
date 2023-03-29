@@ -13,3 +13,11 @@ textArea.addEventListener("input", function () {
   });
   wordCount.value = clearWords.length;
 });
+function mode() {
+  if (document.body.style.background = "white") {
+    document.body.style.background = "black"
+    document.body.style.color = "white"
+    document.getElementById("char").style.color = "white"
+    document.getElementById("word").style.color = "white"
+  }
+}
