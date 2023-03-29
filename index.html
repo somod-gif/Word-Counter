@@ -38,6 +38,25 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDSsC2WvafEy_hbpai_cz0S28Jvs9zZbdo",
+            authDomain: "my-word-counter-project.firebaseapp.com",
+            projectId: "my-word-counter-project",
+            storageBucket: "my-word-counter-project.appspot.com",
+            messagingSenderId: "538922254422",
+            appId: "1:538922254422:web:3fb4737c8d1bcac70a7bf7"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
 </body>
 
 </html>
